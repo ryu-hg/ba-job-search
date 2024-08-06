@@ -1,2 +1,2 @@
-# ba-job-search
-Analysis of my business analyst job search process
+# BA Portfolio -  Job Search Journey
+Welcome to my Business Analysis Portfolio repository. This collection showcases a comprehensive set of business analysis artifacts and methodologies employed to document and optimize my journey in securing a Business Analyst position. It demonstrates my analytical skills, process improvement capabilities, and commitment to data-driven decision-making in a real-world context."

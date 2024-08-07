@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Business Case - Business Analyst Job Search</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="73f63435-7476-430d-9f59-23fb21da8289" class="page sans"><header><h1 class="page-title">Business Case - Business Analyst Job Search</h1><p class="page-description"></p></header><div class="page-body"><table id="11fc7999-cd2e-4b6b-9ad9-2d165f6d9288" class="simple-table"><tbody><tr id="8459eda1-13c2-4b8b-b985-e8824353b512"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:582px">Project Name:</th><td id="LBra" class="" style="width:582px">Business Analyst Job Search</td></tr><tr id="e29957a0-33fa-442b-ac0a-8f66b89e864c"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:582px">Business Case Author: </th><td id="LBra" class="" style="width:582px">Ryu</td></tr><tr id="aa335dfd-182d-456d-aa49-6fee0d710fb6"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:582px">Date of Business Case:</th><td id="LBra" class="" style="width:582px">2024-05-01</td></tr><tr id="947bdb40-a40e-4774-b54c-bc3e2beb63d1"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:582px">Last Revision Date: </th><td id="LBra" class="" style="width:582px">2024-08-07</td></tr><tr id="fb95b2e1-e3f3-4176-9ab2-db60ccbd5e40"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:582px">Version No.</th><td id="LBra" class="" style="width:582px">1.1</td></tr></tbody></table><h1 id="a7d2ff7b-7f19-4dad-a190-ac3c6b0ee1b2" class="">📑 Business Case Summary </h1><p id="ea7d45f8-ab16-43e9-8423-c24ab208e699" class="">The candidate, a business analyst with 17+ years of experience in software development, seeks to transition fully into a business analyst role. This move leverages existing technical skills and business analysis experience to align with career goals and market demands.</p><h1 id="6e181d4b-839d-4aa5-a05a-8e7ff4e53d18" class="">🖊️ Current State</h1><p id="b82219fe-f68a-4be4-a82c-c33814f0a54b" class="">The candidate is currently in a transitional phase of his career, moving from a primarily software development role - where business analysis works are mostly carried out during the requirement specification stages of initiatives - to one more focused on business analysis.</p><p id="46939024-7b46-4af1-88b4-2553b3640673" class="">Key aspects of the current state include:</p><ul id="fc361620-3767-4905-bc54-a0ee7af00151" class="bulleted-list"><li style="list-style-type:disc"><strong>Most Recent Role:</strong> Backend Development and Technical Analysis at Agentbox (Reapit).</li></ul><ul id="874100eb-a5c3-4542-ae90-4827158ce150" class="bulleted-list"><li style="list-style-type:disc"><strong>Experience:</strong> 17+ years in software development with increasing focus on business and technical analysis</li></ul><ul id="9e74ffae-f0b1-4db0-a0ea-c2517e633657" class="bulleted-list"><li style="list-style-type:disc"><strong>Skills:</strong> Strong technical background with growing expertise in requirements gathering, stakeholder management, and process analysis.</li></ul><ul id="090af4bf-9086-4de6-a172-ad78637c58b2" class="bulleted-list"><li style="list-style-type:disc"><strong>Responsibilities:</strong> A mix of business analysis activities and development tasks, including but not limited to:<ul id="58fcefbe-eb5e-4b14-9497-317a0c4cc21b" class="bulleted-list"><li style="list-style-type:circle">defining functional and non-functional requirements,</li></ul><ul id="3877ab5a-88ba-4006-ad1b-50378099e89d" class="bulleted-list"><li style="list-style-type:circle">writing user stories,</li></ul><ul id="8bd6f4ef-7aff-47dc-b601-ca237a26e93e" class="bulleted-list"><li style="list-style-type:circle">backlog grooming,</li></ul><ul id="4c26b51b-d66f-4ee8-a7af-02c67131011f" class="bulleted-list"><li style="list-style-type:circle">risk analysis and management,</li></ul><ul id="07a29572-8b7e-43fc-a6e5-e9eec98a2053" class="bulleted-list"><li style="list-style-type:circle">process analysis and interface analysis,</li></ul><ul id="43d29a8a-d8b2-48cc-8b73-dc355ce2164a" class="bulleted-list"><li style="list-style-type:circle">facilitating workshops and focus groups,</li></ul><ul id="b07dd88c-e0f6-4010-b1ee-f85c60a5723c" class="bulleted-list"><li style="list-style-type:circle">facilitating scrum ceremonies,</li></ul><ul id="d910677d-75d8-483c-b7a4-2f083b42b4ef" class="bulleted-list"><li style="list-style-type:circle">API integration,</li></ul><ul id="26e4bd96-e535-44c3-ae7d-acd710535176" class="bulleted-list"><li style="list-style-type:circle">API implementations,</li></ul><ul id="3439179a-4725-45af-9e03-aa0ffcf40fc6" class="bulleted-list"><li style="list-style-type:circle">designing and maintaining databases,</li></ul><ul id="40fa03d7-9d5f-49c8-a64e-5a1da65dbfbe" class="bulleted-list"><li style="list-style-type:circle">UI/UX designs,</li></ul><ul id="e5ede448-b166-4e12-a8c6-027d4a0375a9" class="bulleted-list"><li style="list-style-type:circle">data sanitisation and migrations,</li></ul><ul id="3c76a9d5-0500-47a6-a7ad-a07cfc42e7fb" class="bulleted-list"><li style="list-style-type:circle">unit/integration testing.</li></ul></li></ul><ul id="7153fd27-b960-484b-a93a-5c18dd18e2f3" class="bulleted-list"><li style="list-style-type:disc"><strong>Career Direction:</strong> Shifting towards more business analysis-focused role.</li></ul><h1 id="8e3f84fc-e9d0-47c0-ae85-c2617be70e1a" class="">📍 Desired State</h1><p id="b9d168e8-b001-47a6-ba36-53fcb65b6447" class="">The candidate aims to transition fully into a dedicated business analyst role, leveraging his technical background and newly acquired BA skills.</p><p id="f7583df6-f1b9-4a48-a7d2-a577b8b281d3" class="">The desired state includes:</p><ul id="31518d05-c081-4fda-8ea7-ea67cc114272" class="bulleted-list"><li style="list-style-type:disc"><strong>Role:</strong> Full-time Business Analyst position.</li></ul><ul id="8678f45b-93fe-4388-be8a-47c817cf62e9" class="bulleted-list"><li style="list-style-type:disc"><strong>Focus:</strong> Primary responsibilities centred on core BA activities such as requirements elicitation, process modelling, and stakeholder management</li></ul><ul id="bfe6892b-6d75-4c9e-8512-b21f08435844" class="bulleted-list"><li style="list-style-type:disc"><strong>Utilisation of Skills:</strong> Full application of BABOK® knowledge and BA techniques in daily work.</li></ul><ul id="ce47d01d-e256-488f-9af9-e9344f8cb46b" class="bulleted-list"><li style="list-style-type:disc"><strong>Career Growth:</strong> Opportunities for further specialisation and advancement in the BA field, with long-term potential to move into Product Ownership or Data Analysis expertise. Stepping into a position that can lead utilisation of modern AI technologies in automating business processes and/or adding value to the organisation’s products and services will be a bonus.</li></ul><ul id="562ab1da-9176-412f-bbab-2e684d98fd08" class="bulleted-list"><li style="list-style-type:disc"><strong>Work Environment:</strong> Agile, waterfall, or hybrid setting where the candidate can apply both their technical knowledge and BA skills.</li></ul><ul id="184306be-a14a-48ce-b9f3-d2490c996f0d" class="bulleted-list"><li style="list-style-type:disc"><strong>Industry:</strong> Preferably in a sector that can benefit from the candidate&#x27;s software development background.</li></ul><ul id="3c80f793-63e6-4f0a-bbad-ed615c8e4af1" class="bulleted-list"><li style="list-style-type:disc"><strong>Professional Development:</strong><ul id="4409a78d-4c07-46ce-8abb-99d0cd20da15" class="bulleted-list"><li style="list-style-type:circle">Obtain basic certifications significant in proving the candidate’s capability, which includes:<ul id="418a027f-18b8-4bd4-993f-c8f02ac967dd" class="bulleted-list"><li style="list-style-type:square"><strong>IIBA®:</strong> ECBA™</li></ul><ul id="c8431ce9-ddbc-4d6b-8695-af4427ec8c81" class="bulleted-list"><li style="list-style-type:square"><strong>Scrum.org™:</strong> PSPO™ I</li></ul></li></ul><ul id="3b474a57-caf8-46b6-a2da-a76d5c48aeaf" class="bulleted-list"><li style="list-style-type:circle">Continued learning and potential pursuit of higher-level BA and scrum certifications (i.e., CCBA™, PSPO™ II, and PSM™), as well as furthering knowledge and skills in data analysis, and/or AI.</li></ul><ul id="04ef949c-4673-4cb7-9a18-ce3f59dc0d47" class="bulleted-list"><li style="list-style-type:circle">Actively network within the industry, BA community, and local community in attempt to bring fresh values and insights into the organisation.</li></ul></li></ul><ul id="0ad6412a-fea9-4ade-a21a-84062d206df1" class="bulleted-list"><li style="list-style-type:disc"><strong>Impact:</strong> Ability to significantly contribute to bridging business needs with technical solutions, leveraging unique blend of skills</li></ul><h1 id="f143784b-64bb-4e37-bf05-a02ed9949d7a" class="">🟢 Benefits</h1><h3 id="ca294e11-d1d7-407b-9a24-2349d630a9a0" class="">🧑🏻‍💻 For the Candidate</h3><p id="d8691184-3c4a-4be4-bb15-5b4a2138d89f" class="">Transitioning into an exclusive business analysis role offers the following advantages:</p><ul id="260925d9-647e-44aa-862e-8de09eb4dc76" class="bulleted-list"><li style="list-style-type:disc">Enhanced Stakeholder Engagement: Increased opportunities for active and frequent interactions with stakeholders across various levels of the organization.</li></ul><ul id="3df38849-4782-4c24-b9e3-35adef1fc634" class="bulleted-list"><li style="list-style-type:disc">Collaborative Environment Facilitation: Ability to foster a supportive and collaborative culture within the organization and with external partners.</li></ul><ul id="40370bff-1121-4e0d-bb7b-f6e47ff1c939" class="bulleted-list"><li style="list-style-type:disc">Process Analysis and Improvement: Leverage skills in analyzing current business processes and market trends to identify needs and elicit requirements for organizational enhancement.</li></ul><ul id="539562aa-5fb9-4f9b-8e20-7c36adee59c5" class="bulleted-list"><li style="list-style-type:disc">Documentation and Knowledge Management: Develop comprehensive business requirement documentation to optimize analysis processes and establish a shared understanding of organisational needs among stakeholders.</li></ul><ul id="13ae9716-7e6f-4377-85ba-99906e680ddc" class="bulleted-list"><li style="list-style-type:disc">Strategic Focus: Shift emphasis towards planning business initiatives rather than primarily implementing them, allowing for a more strategic role in the organisation.</li></ul><ul id="8fb4a375-93d1-4b6f-b339-f85eb77020f7" class="bulleted-list"><li style="list-style-type:disc">Holistic Business Understanding: Gain and maintain a comprehensive view of the entire business ecosystem, rather than specializing in specific technical areas.</li></ul><h3 id="9ba19f10-4f6d-465e-93bd-c7eae323621a" class="">🏢 For Potential Employers</h3><p id="af7ef6f4-6830-4024-8b5f-bf714485dde4" class="">Hiring the candidate as a Business Analyst provides the following benefits:</p><ul id="67efea6c-f696-422f-81ac-9f46b764af25" class="bulleted-list"><li style="list-style-type:disc">Technical Expertise: Gain a BA with a strong technical background, particularly valuable for technology-driven projects and initiatives.</li></ul><ul id="91861052-bec2-4d10-a536-829f0f91b91c" class="bulleted-list"><li style="list-style-type:disc">Documentation and Process Standardisation: Acquire an enthusiastic professional committed to creating useful documentation to standardise and improve organisational processes.</li></ul><ul id="d7d43170-0281-4b10-8824-5209c1599795" class="bulleted-list"><li style="list-style-type:disc">Commitment to Professional Development: Benefit from a BA dedicated to continuous learning and professional growth, backed by relevant certifications.</li></ul><ul id="004ad751-bc7b-4b32-bcc6-3c756a34afc8" class="bulleted-list"><li style="list-style-type:disc">Collaborative Team Player: Integrate a professional with strong interpersonal skills, capable of improving business processes while fostering collaboration and contributing to a positive working culture.</li></ul><ul id="b5e42588-55d5-4f20-9c9d-03fcbb9d654d" class="bulleted-list"><li style="list-style-type:disc">Bridge Between Business and Technology: Utilize the candidate&#x27;s unique blend of business analysis skills and technical knowledge to effectively translate business needs into technical solutions</li></ul><h1 id="7d936ec9-2735-4069-b61d-6859d5c577d5" class="">🟡 Costs</h1><p id="e81b5056-ba7a-4aa5-94f4-a562c1234612" class="">Here are potential costs associated with transitioning fully into a business analyst role.</p><h3 id="5fb8ceba-314d-405b-aa76-7296cce4301c" class="">📜 Certification Costs</h3><table id="e83dce8d-f850-4bf6-bf0f-264f502627fd" class="simple-table"><thead class="simple-table-header"><tr id="79cf6040-3d7d-4a67-86e2-259a509df565"><th id="&lt;HJH" class="simple-table-header-color simple-table-header" style="width:237.8515625px">Certificate (Issuing Organisation)</th><th id="@usE" class="simple-table-header-color simple-table-header" style="width:176.71875px">Estimated time required</th><th id="mutY" class="simple-table-header-color simple-table-header" style="width:264.578125px">Exam Fee</th><th id="iXp&lt;" class="simple-table-header-color simple-table-header" style="width:280.84375px">Other Fees</th></tr></thead><tbody><tr id="7abbf882-4a30-481a-a99f-9612ca0488d6"><td id="&lt;HJH" class="" style="width:237.8515625px">ECBA (IIBA)</td><td id="@usE" class="" style="width:176.71875px">60 - 120 days</td><td id="mutY" class="" style="width:264.578125px">US$195 (* US$350 for non-members)</td><td id="iXp&lt;" class="" style="width:280.84375px">Membership: US$139<br/>Endorsed Course: AU$300 - AU$2,000<br/></td></tr><tr id="f9b0ae0c-7596-4ef2-8341-ae14fc6b65f0"><td id="&lt;HJH" class="" style="width:237.8515625px">PSPO I (Scrum.org)</td><td id="@usE" class="" style="width:176.71875px">15 - 30 days</td><td id="mutY" class="" style="width:264.578125px">US$200</td><td id="iXp&lt;" class="" style="width:280.84375px">Endorsed Course: AU$1,000 - AU$2,000</td></tr></tbody></table><h3 id="6ba22619-1310-4a70-9584-619ff463f345" class="">🌟 Opportunity Costs</h3><ul id="f0c747e5-e635-400d-81a2-3feff684b90e" class="bulleted-list"><li style="list-style-type:disc">Lack of income during the time invested in training, certification, job search and application processes.</li></ul><ul id="124c4395-b6b4-4fc9-8dd4-656ef0734a77" class="bulleted-list"><li style="list-style-type:disc">Initial salary gap between mid-senior development focused role and junior business analysis focused role.</li></ul><h3 id="0142fb41-20db-4c52-b57d-10bfd57e746a" class="">💸 Other Costs</h3><ul id="c9c539df-e7ff-4f44-bef8-329e9366dd1f" class="bulleted-list"><li style="list-style-type:disc">Time and money spent on trainings, webinars, networking events, and resources that may not be directly related to the certifications.</li></ul><ul id="a183c683-2a8a-4489-95fc-15516d8bf184" class="bulleted-list"><li style="list-style-type:disc">Potential cost of relocation.</li></ul><h1 id="32a79dc7-cd74-4ffc-9557-e65ac46bd0b8" class="">🔴 Risks and Mitigations</h1><table id="3d0b6b4b-5b7a-4545-a78e-92694fd1e279" class="simple-table"><thead class="simple-table-header"><tr id="df8322e7-970c-4e77-822c-23a3a3ac727c"><th id="&lt;HJH" class="simple-table-header-color simple-table-header" style="width:377.3828125px">Risk Description</th><th id="@usE" class="simple-table-header-color simple-table-header" style="width:89.859375px">Probability</th><th id="mutY" class="simple-table-header-color simple-table-header" style="width:70.7421875px">Impact</th><th id="MCql" class="simple-table-header-color simple-table-header" style="width:57.25px">Score</th><th id="iXp&lt;" class="simple-table-header-color simple-table-header" style="width:472.3515625px">Mitigation Plan</th></tr></thead><tbody><tr id="0ac23a98-ee77-4f73-9814-9ece0625e199"><td id="&lt;HJH" class="" style="width:377.3828125px">Competition from candidates with more explicit BA experience</td><td id="@usE" class="" style="width:89.859375px">High</td><td id="mutY" class="" style="width:70.7421875px">Medium</td><td id="MCql" class="" style="width:57.25px">6</td><td id="iXp&lt;" class="" style="width:472.3515625px">Emphasise unique value proposition of technical expertise combined with BA skills.</td></tr><tr id="67cdf63b-f768-4498-aec1-a98a7dbebba3"><td id="&lt;HJH" class="" style="width:377.3828125px">Potential knowledge gaps in specific BA methodologies</td><td id="@usE" class="" style="width:89.859375px">Medium</td><td id="mutY" class="" style="width:70.7421875px">Medium</td><td id="MCql" class="" style="width:57.25px">4</td><td id="iXp&lt;" class="" style="width:472.3515625px">Continue learning and pursue higher-level IIBA certifications.</td></tr><tr id="2753640c-cbdc-4b22-91a2-c43043f369c4"><td id="&lt;HJH" class="" style="width:377.3828125px">Initial salary gap in comparison to more development focused roles</td><td id="@usE" class="" style="width:89.859375px">High</td><td id="mutY" class="" style="width:70.7421875px">Low</td><td id="MCql" class="" style="width:57.25px">3</td><td id="iXp&lt;" class="" style="width:472.3515625px">Target BAs roles that require strong technical background. Consider it as a career investment to potentially gain return in the long-term.</td></tr><tr id="dbf65367-90de-4a7e-86d6-6adb03ffff0a"><td id="&lt;HJH" class="" style="width:377.3828125px">Sharp decline in demand for Business Analyst skills in the Australian job market</td><td id="@usE" class="" style="width:89.859375px">Low</td><td id="mutY" class="" style="width:70.7421875px">High</td><td id="MCql" class="" style="width:57.25px">3</td><td id="iXp&lt;" class="" style="width:472.3515625px">Consider overseas market by leveraging past experience and network in Asia, Europe, and North America.</td></tr><tr id="a78b5404-5921-4458-8e25-b042b9889202"><td id="&lt;HJH" class="" style="width:377.3828125px">Impact of AI to the characteristics of BA roles</td><td id="@usE" class="" style="width:89.859375px">Medium</td><td id="mutY" class="" style="width:70.7421875px">Low</td><td id="MCql" class="" style="width:57.25px">2</td><td id="iXp&lt;" class="" style="width:472.3515625px">Keep up to date with the latest AI trends in terms of both knowledge and experience, and turn it into an opportunity.</td></tr></tbody></table><h1 id="2eababe2-b458-4837-a098-000ea238200f" class="">🎖️ Success Criteria</h1><ul id="7cf798d8-3f13-4fd3-a8fe-3a38a88a7cfa" class="bulleted-list"><li style="list-style-type:disc">Securing a business analyst position within 6 months.</li></ul><ul id="15dfc411-dfcd-4c07-9ea8-58aeac876246" class="bulleted-list"><li style="list-style-type:disc">Role allows for at least 70% of time dedicated to core BA activities.</li></ul><ul id="5f4e2bad-7dc0-46b1-8277-21911b9495a8" class="bulleted-list"><li style="list-style-type:disc">Opportunity for continued professional development in BA field.</li></ul><h3 id="4998eef5-4bd2-41f7-b34c-87ee0e9f2198" class="">✨ Bonus Points</h3><ul id="3b20f57c-94ac-418e-aefa-30e8e9757eb7" class="bulleted-list"><li style="list-style-type:disc">Opportunity to utilise AI, whether it is to improve business processes or to add value to a product.</li></ul><ul id="87a94d0c-ffc0-4223-8c33-f4ec44558407" class="bulleted-list"><li style="list-style-type:disc">Potential future opportunity to move into a position that can work closely with a development team, such as product owner.</li></ul><h1 id="7cf2d1ed-240e-477c-bf24-5036561ba668" class="">📌 Version Control</h1><table id="8e51123f-8975-4778-aa41-8290ff9043ce" class="simple-table"><thead class="simple-table-header"><tr id="d84f2633-2c72-4063-9281-f42142f789bb"><th id="&lt;HJH" class="simple-table-header-color simple-table-header" style="width:125.0234375px">Version Number</th><th id="@usE" class="simple-table-header-color simple-table-header" style="width:120.0546875px">Date of Version</th><th id="iXp&lt;" class="simple-table-header-color simple-table-header" style="width:552.9609375px">Amendments</th></tr></thead><tbody><tr id="79d9981e-56b1-4bbf-8b54-e9e659394e39"><td id="&lt;HJH" class="" style="width:125.0234375px">1.0</td><td id="@usE" class="" style="width:120.0546875px">2024-05-01</td><td id="iXp&lt;" class="" style="width:552.9609375px">- Created.<br/>- Summary, Current State, Desired State, Benefits, and Costs were defined.<br/></td></tr><tr id="7428b5e7-4ab8-4bc8-b118-e3c0db332fd9"><td id="&lt;HJH" class="" style="width:125.0234375px">1.1</td><td id="@usE" class="" style="width:120.0546875px">2024-08-07</td><td id="iXp&lt;" class="" style="width:552.9609375px">- ECBA related information was added.<br/>- Benefits For Potential Employers, Other Costs, Risks and Mitigations were added.<br/></td></tr></tbody></table><p id="e33547d6-1b5e-4214-ae9a-c8dac00072e0" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -3,11 +3,14 @@ Welcome to my Business Analysis Portfolio repository. This collection showcases 
 
 Each folder corresponds to the tool used to produce the artifacts. Below is the table of contents.
 
-1. Notion: Used to create text documents, which were exported as HTML files.
-    1. __[Business Case](https://github.com/ryu-hg/ba-job-search/blob/notion/Notion/Business%20Case.md)__: Document detailing the rationale for pursuing BA career path.
-2. Miro: Used to create charts, which were exported as image files.
-    1. __[Product Roadmap](https://github.com/ryu-hg/ba-job-search/blob/miro/Miro/Roadmap.jpg)__
-3. Power BI: Used for data visualisation.
+1. __[Notion](https://github.com/ryu-hg/ba-job-search/blob/main/Notion)__: Used to create text documents, which were exported as HTML files. They are further converted to markdowns for ease of browsing on Github.
+    1. __[Business Case](https://github.com/ryu-hg/ba-job-search/blob/main/Notion/Business%20Case.md)__: Document detailing the rationale for pursuing BA career path.
+2. __[Miro](https://github.com/ryu-hg/ba-job-search/blob/main/Miro)__: Used to create charts, which were exported as image files.
+    1. __[Product Roadmap](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Roadmap.jpg)__
+    2. __[Context Diagram](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Context%20Diagram.jpg)__
+    3. __[Cross-Functional Flow Diagram (Certification Process)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Cross-Functional%20Flow%20Diagram_Certification%20Process.jpg)__
+    4. __[Cross-Functional Flow Diagram (Job Search Process) & Process Flowchart (Tailor CV and Cover Letter)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Process%20Models_Job%20Search%20Process.jpg)__
+3. __[Power BI]()__: Used for data visualisation and analysis.
     1. __[Job Advertisements Report]()__
     2. __[LinkedIn Impressions Report]()__
 

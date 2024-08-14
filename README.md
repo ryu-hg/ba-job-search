@@ -9,7 +9,7 @@ Each folder corresponds to the tool used to produce the artifacts. Below is the 
     1. __[Product Roadmap](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Roadmap.jpg)__
     2. __[Context Diagram](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Context%20Diagram.jpg)__
     3. __[Cross-Functional Flow Diagram (Certification Process)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Cross-Functional%20Flow%20Diagram_Certification%20Process.jpg)__
-    4. __[Flow Chart](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Flow%20Chart.jpg)__
+    4. __[Cross-Functional Flow Diagram (Job Search Process) & Process Flowchart (Tailor CV and Cover Letter)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Process%20Models_Job%20Search%20Process.jpg)__
 3. __[Power BI]()__: Used for data visualisation and analysis.
     1. __[Job Advertisements Report]()__
     2. __[LinkedIn Impressions Report]()__

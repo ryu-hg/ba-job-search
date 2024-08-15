@@ -7,11 +7,12 @@ Each folder corresponds to the tool used to produce the artifacts. Below is the 
     1. __[Business Case](https://github.com/ryu-hg/ba-job-search/blob/main/Notion/Business%20Case.md)__: Document detailing the rationale for pursuing BA career path.
 2. __[Miro](https://github.com/ryu-hg/ba-job-search/blob/main/Miro)__: Used to create charts, which were exported as image files.
     1. __[Product Roadmap](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Roadmap.jpg)__
-    2. __[Context Diagram](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Context%20Diagram.jpg)__
-    3. __[Cross-Functional Flow Diagram (Certification Process)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Cross-Functional%20Flow%20Diagram_Certification%20Process.jpg)__
-    4. __[Cross-Functional Flow Diagram (Job Search Process) & Process Flowchart (Tailor CV and Cover Letter)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Process%20Models_Job%20Search%20Process.jpg)__
+    2. __[Balanced Scorecard](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Balanced%20Scorecard.jpg)__
+    3. __[Context Diagram](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Context%20Diagram.jpg)__
+    4. __[Cross-Functional Flow Diagram (Certification Process)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Cross-Functional%20Flow%20Diagram_Certification%20Process.jpg)__
+    5. __[Cross-Functional Flow Diagram (Job Search Process) & Process Flowchart (Tailor CV and Cover Letter)](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Process%20Models_Job%20Search%20Process.jpg)__
 3. __[Power BI]()__: Used for data visualisation and analysis.
     1. Job Advertisements Report (...work in progress)
-    2. LinkedIn Impressions Report] (...work in progress)
+    2. LinkedIn Impressions Report (...work in progress)
 
-Additionally, the [Issues](https://github.com/ryu-hg/ba-job-search/issues) section of this repository contains user stories and their corresponding acceptance criteria. These represent tasks I aim to accomplish as part of my transition into a business analysis-focused role. If you're interested in learning more about my professional development approach I am taking, I encourage you to explore these entries.
+Additionally, the [Issues](https://github.com/ryu-hg/ba-job-search/issues) section of this repository contains user stories and their corresponding acceptance criteria. These represent tasks I aim to accomplish as part of my transition into a business analysis-focused role. If you're interested in learning more about my professional development approach I am taking, I encourage you to explore these entries as well.

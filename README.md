@@ -5,6 +5,7 @@ Each folder corresponds to the tool used to produce the artifacts. Below is the 
 
 1. __[Notion](https://github.com/ryu-hg/ba-job-search/blob/main/Notion)__: Used to create text documents, which were exported as HTML files. They are further converted to markdowns for ease of browsing on Github.
     1. __[Business Case](https://github.com/ryu-hg/ba-job-search/blob/main/Notion/Business%20Case.md)__: Document detailing the rationale for pursuing BA career path.
+    2. __[SWOT Analysis and Ansoff Matrix](https://github.com/ryu-hg/ba-job-search/blob/main/Notion/SWOT%20Analysis%20and%20Ansoff%20Matrix.md)__: SWOT analysis on trasitioning from a dev-focused role to a BA-focused role, further detailing the strategy using Ansoff matrix.
 2. __[Miro](https://github.com/ryu-hg/ba-job-search/blob/main/Miro)__: Used to create charts, which were exported as image files.
     1. __[Product Roadmap](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Roadmap.jpg)__
     2. __[Balanced Scorecard](https://github.com/ryu-hg/ba-job-search/blob/main/Miro/Balanced%20Scorecard.jpg)__

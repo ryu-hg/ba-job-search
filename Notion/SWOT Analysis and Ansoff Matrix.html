@@ -1,0 +1,687 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>SWOT Analysis + Ansoff matrix</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(249, 228, 188, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="9396296d-9ad7-4fc4-afcf-5a210559cc24" class="page sans"><header><h1 class="page-title">SWOT Analysis + Ansoff matrix</h1><p class="page-description"></p></header><div class="page-body"><table id="1cb4cd3c-f23f-482f-801f-434774f29fe9" class="simple-table"><tbody><tr id="d30c16ac-f950-4e8c-a644-5a99f9ec3d60"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:148px">Project Name:</th><td id="LBra" class="" style="width:204.453125px">Business Analyst Job Search</td></tr><tr id="8aceb138-4519-482f-b13b-0e11b4e60ad0"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:148px">Author: </th><td id="LBra" class="" style="width:204.453125px">Ryu</td></tr><tr id="e4a05363-d3e1-4f6c-9c36-b8cf1af3576e"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:148px">Date Created:</th><td id="LBra" class="" style="width:204.453125px">2024-08-17</td></tr><tr id="34c704e1-49e5-4242-898d-69f54be21757"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:148px">Last Revision Date: </th><td id="LBra" class="" style="width:204.453125px">2024-08-17</td></tr><tr id="e977f4f2-9880-4eba-837c-b31e0e4a87e1"><th id="KC@O" class="block-color-orange_background simple-table-header" style="width:148px">Version No.</th><td id="LBra" class="" style="width:204.453125px">1.0</td></tr></tbody></table><h1 id="43a6321c-6679-4c20-a0a1-adcff3a7d210" class="">📑 Description</h1><p id="ba36cdf6-fd88-43bb-bc72-397d2b8e33fe" class="">The candidate, a business analyst with 17+ years of experience in software development, is considering to transition fully into a business analyst role. This strategic career move aims to leverage the candidate&#x27;s unique blend of technical expertise and growing business analysis skills. The document employs SWOT analysis to evaluate the strengths, weaknesses, opportunities, and threats associated with this career transition. Furthermore, the Ansoff Matrix is used to provide a structured approach to growth strategies, offering more details into potential paths for professional development and market positioning. This comprehensive analysis serves as a roadmap for the candidate&#x27;s career shift, aligning personal goals with market demands in the field of business analysis.</p><h1 id="6c3520be-a335-4cd0-b23a-c353432460df" class=""><mark class="highlight-default">🎛️</mark> SWOT Analysis</h1><div id="91030cc2-a1ec-4631-b270-511f4e5f1b7e" class="column-list"><div id="daf2c46f-b97d-481d-b3c0-ba378a23efbf" style="width:50%" class="column"><h3 id="8d026686-445c-488c-833e-1a1234e71feb" class="block-color-gray_background">Strengths:</h3><ul id="cf02838f-6598-484a-bef1-43629bc0ab6a" class="bulleted-list"><li style="list-style-type:disc">17+ years of technical background.</li></ul><ul id="662b28dd-0482-47bb-b575-e6c1a7e7addc" class="bulleted-list"><li style="list-style-type:disc">Growing expertise in BA skills.</li></ul><ul id="4c40c242-39f5-48e7-877d-686e250e7415" class="bulleted-list"><li style="list-style-type:disc">Experience in both Agile and Waterfall methodologies.</li></ul><ul id="05aed3c5-9e27-4512-ad75-32741d99e5e6" class="bulleted-list"><li style="list-style-type:disc">ECBA &amp; PSPO certificates.</li></ul><ul id="40a2dd7d-bec6-48cf-bb92-9512653fd9b2" class="bulleted-list"><li style="list-style-type:disc">Strong interpersonal skills</li></ul><ul id="dc9fd4f8-3b73-4853-8a69-900301b73c7d" class="bulleted-list"><li style="list-style-type:disc">Multilingual capabilities (English + Japanese).</li></ul></div><div id="05986da1-ca3e-4727-80e4-8497ebce573c" style="width:50%" class="column"><h3 id="9e76b60e-53c5-48ed-ac28-de8abb11bd18" class="block-color-gray_background">Weaknesses:</h3><ul id="81be7dee-7720-40eb-b6cf-4bd9fa99767b" class="bulleted-list"><li style="list-style-type:disc">Lack of dedicated full-time BA work history.</li></ul><ul id="e5a95879-e923-435f-9180-f56d2113e886" class="bulleted-list"><li style="list-style-type:disc">Limited experience in analyst-specific tools, such as MS Visio, Power BI, etc.</li></ul><ul id="012c62e4-02a7-4b18-9681-bc20f0e72979" class="bulleted-list"><li style="list-style-type:disc">Limited knowledge in the field of business.</li></ul></div></div><hr id="8cf6be9b-5e1e-4cec-80e3-f9efb25f17d7"/><div id="ebd78883-34f8-4139-a58e-18fc700bd7cd" class="column-list"><div id="51cc0037-9967-4bcb-8304-a16ae02f02a9" style="width:50%" class="column"><h3 id="76635a26-1e9d-4b62-b7f1-99141ad2f6f3" class="block-color-gray_background">Opportunities:</h3><ul id="3777756c-4894-4ae6-93da-f8c83683f9ad" class="bulleted-list"><li style="list-style-type:disc">Growing demand for BAs who can bridge the gap between business needs and technical solutions.</li></ul><ul id="fb5e7e26-9283-4aa4-a830-9b46f69e8bd1" class="bulleted-list"><li style="list-style-type:disc">Expanding market demands for BAs in general.</li></ul><ul id="1fad3f12-e85f-42b9-b4c3-e13c95d73985" class="bulleted-list"><li style="list-style-type:disc">Potential career advancement into PO and DA.</li></ul></div><div id="365dd2a4-c4c3-4a97-a74a-956a188686db" style="width:50%" class="column"><h3 id="4346e60e-646f-46b2-ad0b-c46f1c98f3e1" class="block-color-gray_background">Threats:</h3><ul id="527658d9-eb22-4d01-a0f7-cd407f02b341" class="bulleted-list"><li style="list-style-type:disc">Competition from candidates with more explicit BA experience.</li></ul><ul id="760e09b9-8099-46f0-81bb-a5cada765268" class="bulleted-list"><li style="list-style-type:disc">Unforeseen impact of AI on BA roles.</li></ul><ul id="f845e85b-5a87-4378-ac20-230174f32901" class="bulleted-list"><li style="list-style-type:disc">Economic fluctuation affecting BA job market.</li></ul></div></div><hr id="2edd8462-ca55-4743-8a5f-2e21817b7aaf"/><p id="988edba8-9885-41cd-9b0e-0661c094e37b" class="">
+</p><h1 id="95ad48c0-1ecc-40f7-9972-d6f80d5d008b" class=""><mark class="highlight-gray">🎛️</mark> Ansoff Matrix</h1><div id="2aee3fb2-6157-4e7f-a7d5-ed5c774f8df6" class="column-list"><div id="40844c38-ce38-4e24-bd23-e6d9d6c7b753" style="width:50%" class="column"><h3 id="51e3520a-f7e6-49e0-be5a-1a868ed6f3b1" class="block-color-gray_background">Market Development:</h3><p id="993d94c0-b6b6-4ad1-bf98-36078d97fba9" class="">Apply existing technical and growing BA skills to new industries.</p><p id="d1e7e95a-bdc8-4f5e-8e1c-3c313b7f9ada" class="">Strategy: Seek BA roles that demands technical knowledge.</p><p id="355b26f6-c38b-4f96-9a4d-3f5529cb9bea" class="">SWOT: Utilise strengths (technical background) to explore opportunities (expanding market for BAs in various industries).</p></div><div id="a73d1db7-1e5a-4751-a749-879d0ba233df" style="width:50%" class="column"><h3 id="17ce2ccf-b4ad-4e84-9d01-88b8a9775ebf" class="block-color-gray_background">Diversification:</h3><p id="f6475390-6402-47d3-9ae8-61acab2f4192" class="">Invest in emerging technologies such as AI-driven data analysis and automation.</p><p id="3822b91b-1b24-4eff-8d54-ee29aa3b498e" class="">Strategy: Pursue formal BA positions while developing new skills in AI.</p><p id="947c83c9-9dcf-4134-afb3-ff8c9a9908e0" class="">SWOT: Addresses weaknesses (lack of dedicated BA history) while capitalising on opportunities (increasing importance of AI).</p></div></div><hr id="394b1d1a-0952-4507-a127-f260e1ad9258"/><div id="42b2c184-1ee0-49df-a752-e9134f55581b" class="column-list"><div id="5d20a9a7-ee45-4d22-a547-c91f130ca687" style="width:50%" class="column"><h3 id="f45faf49-eabf-4a65-ae8e-69bbece26c5d" class="block-color-gray_background">Market Penetration:</h3><p id="f6d53be3-b3c8-4e75-95cd-bdad21f5c3c6" class="">Leverage current technical skills and growing BA expertise.</p><p id="8af2c585-85dd-47e7-a77b-59a54dc44ece" class="">Strategy: Seek development roles with strong focus on analytical tasks (e.g., SE).</p><p id="e4de144d-6cc3-46af-9555-1c3adcdbc8e5" class="">SWOT: Utilise strength (technical background &amp; growing BA expertise) to address weakness (lack for dedicated BA history).</p></div><div id="2130f512-f585-4972-aca2-f7ce88c3e7dd" style="width:50%" class="column"><h3 id="ec255705-cb6b-4ff2-8ab3-89cc7ebd4e76" class="block-color-gray_background">Product Development:</h3><p id="7c6d8c55-3e57-48bb-8fa2-476c6948c0a1" class="">Upskill to enhance BA profile.</p><p id="ced4295d-d3c7-4cf4-8b07-f82479ee21fd" class="">Strategy: Invest in BA training and certifications.</p><p id="779d6dcb-9130-4077-a98f-50f26344ead3" class="">SWOT: Addresses weaknesses (lack of dedicated BA history) and leverage opportunities (demands for BAs with tech background).</p></div></div><hr id="4e783193-8a91-4722-96b8-e327bda6ede6"/><p id="fffefcce-c217-8022-bdc4-db35abb81382" class="">
+</p><h1 id="49ed715d-442f-4bf4-a6b7-939713b2b937" class="">📌 Version Control</h1><table id="590019a3-44d5-4ab7-87d9-80dbf35290ca" class="simple-table"><thead class="simple-table-header"><tr id="8603ceb8-5e13-4c18-b6df-fae7d44f7479"><th id="&lt;HJH" class="simple-table-header-color simple-table-header" style="width:125.0234375px">Version Number</th><th id="@usE" class="simple-table-header-color simple-table-header" style="width:120.0546875px">Date of Version</th><th id="iXp&lt;" class="simple-table-header-color simple-table-header" style="width:552.9609375px">Amendments</th></tr></thead><tbody><tr id="704b687b-a4a0-45b3-87c2-adedd2cffd8f"><td id="&lt;HJH" class="" style="width:125.0234375px">1.0</td><td id="@usE" class="" style="width:120.0546875px">2024-08-17</td><td id="iXp&lt;" class="" style="width:552.9609375px">- Created.<br/>- Description, SWOT analysis, and Ansoff matrix were added.<br/></td></tr><tr id="28367d58-4a82-4b79-abc7-08a8a707e061"><td id="&lt;HJH" class="" style="width:125.0234375px"></td><td id="@usE" class="" style="width:120.0546875px"></td><td id="iXp&lt;" class="" style="width:552.9609375px"></td></tr></tbody></table><p id="2dd854d1-0239-40b3-bbcc-34513867c3fc" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

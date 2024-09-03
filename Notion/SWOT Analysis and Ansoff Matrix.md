@@ -1,12 +1,12 @@
-# SWOT Analysis + Ansoff matrix
+# SWOT Analysis + Ansoff Matrix
 
 |     |     |
 | --- | --- |
 | Project Name: | Business Analyst Job Search |
 | Author: | Ryu |
 | Date Created: | 2024-08-17 |
-| Last Revision Date: | 2024-08-17 |
-| Version No. | 1.0 |
+| Last Revision Date: | 2024-08-22 |
+| Version No. | 1.1 |
 
 # 📑 Description
 
@@ -58,6 +58,8 @@ The candidate, a business analyst with 17+ years of experience in software devel
 
 *   Economic fluctuation affecting BA job market.
 
+*   Financial difficulty due to long unemployment.
+
 - - -
 
 # 🎛️ Ansoff Matrix
@@ -102,9 +104,91 @@ SWOT: Addresses weaknesses (lack of dedicated BA history) and leverage opportuni
 
 - - -
 
+# 📚 Strategies
+
+## Immediate Strategy (0-1 month):
+
+*   Skill Development:
+    
+    *   Engage in online courses or workshops to strengthen business knowledge.
+    
+    *   Focus on enhancing skills in BA-specific tools such as Power BI, MS Excel, MS Visio, and Lucidchart.
+
+*   Networking:
+    
+    *   Actively participate in industry networking events.
+    
+    *   Connect with BAs in your target industries on LinkedIn.
+
+## Short-term Strategy (1-3 months):
+
+*   Market Development:
+    
+    *   Target BA roles that specifically value technical expertise.
+    
+    *   Tailor resume and cover letters to highlight unique blend of technical and BA skills, also emphasising the interpersonal capabilities.
+
+*   Portfolio Development:
+    
+    *   Develop a personal website or GitHub repository to showcase BA artifacts and process models.
+    
+    *   Create case studies showcasing past BA work, emphasising how your technical background enhanced outcomes.
+
+*   Job Search:
+    
+    *   Apply for BA positions in industries where your technical background is an asset (e.g., software companies, fintech, IT consulting).
+    
+    *   Prepare for interviews by practicing how to articulate the role transition and unique value proposition.
+
+*   Volunteering:
+    *   Approach local non-profit organisations to see if there is a volunteering opportunity to improve their operation as a BA.
+
+## Mid-term Strategy (3-6 months):
+
+*   Diversification:
+    
+    *   Explore opportunities in emerging areas like AI-driven data analysis.
+    
+    *   Consider pursuing advanced certifications like CCBA, or other related certification like PMI’s CAPM.
+
+*   Continuous Learning:
+    
+    *   Stay updated on BA trends and methodologies through ongoing education.
+    
+    *   Gain insights into different industries where BA roles are currently in demand.
+    
+    *   Learn tools that are not exclusive to BA but frequently mentioned in their roles, such as CRM (e.g., Salesforce) and process automation (e.g., ServiceNow, Power Automate).
+
+*   Part-time or Freelance Work:
+    *   Seek part-time or freelance software development contracts to fund learning efforts, potentially volunteer on performing BA in addition to the assigned work as well.
+
+## Risk Mitigation Strategies:
+
+*   Maintain and update technical skills to remain competitive.
+
+*   Build a strong professional network to stay informed about job opportunities.
+
+*   Be open to contract or project-based BA roles to gain experience.
+
+*   Consider freelance BA work to build portfolio and mitigate potential income gaps.
+
+# 🎖️ Success Metrics:
+
+*   Secure a BA position within 6 months of active job search.
+
+*   Achieve a role where at least 70% of time is dedicated to core BA activities.
+
+*   Identify opportunities for continued professional development in the BA field.
+
+## 🌟 Bonus Objectives:
+
+*   Seek roles that allow leveraging strong API integration and/or multicultural experience.
+
+*   Look for opportunities to apply AI in business process improvement or product development.
+
 # 📌 Version Control
 
 | Version Number | Date of Version | Amendments |
 | --- | --- | --- |
 | 1.0 | 2024-08-17 | \- Created.  <br>\- Description, SWOT analysis, and Ansoff matrix were added. |
-|     |     |     |
+| 1.1 | 2024-08-24 | \- Added strategies and success metrics. |
